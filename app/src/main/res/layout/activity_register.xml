@@ -2,90 +2,86 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_color_app"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_color_app"
-    tools:context=".loggingIn">
+    tools:context=".Register">
 
     <TextView
-        android:id="@+id/tv_login_title"
+        android:id="@+id/tv_register_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="Log In"
+        android:layout_marginTop="20dp"
+        android:text="Register"
         android:textSize="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/et_login_email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintBottom_toTopOf="@id/et_register_email"/>
 
     <EditText
-        android:id="@+id/et_login_email"
+        android:id="@+id/et_register_email"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="E-mail"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        app:layout_constraintBottom_toTopOf="@id/et_login_password"
+        app:layout_constraintBottom_toTopOf="@id/et_register_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_login_title" />
+        app:layout_constraintTop_toBottomOf="@id/tv_register_title" />
 
     <EditText
-        android:id="@+id/et_login_password"
+        android:id="@+id/et_register_password"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_marginTop="36dp"
         android:hint="Password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/btn_login_passwordHideShow"
+        app:layout_constraintBottom_toTopOf="@id/btn_register_Register_passwordHideShow"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_login_email" />
+        app:layout_constraintTop_toBottomOf="@id/et_register_email" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_login_passwordHideShow"
+        android:id="@+id/btn_register_Register_passwordHideShow"
         android:layout_width="80dp"
         android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_config_main"
         android:text="SHOW"
+        android:textColor="@color/white"
         android:textSize="10dp"
-        android:textColor="@color/white"
-        android:background="@drawable/btn_config_main"
-        app:layout_constraintBottom_toTopOf="@+id/btn_login_login"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_login_password" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_login_login"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="140dp"
-        android:background="@drawable/btn_config_main"
-        android:text="Log In"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintCircleRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_login_password" />
+        app:layout_constraintTop_toBottomOf="@id/et_register_password"
+        app:layout_constraintBottom_toTopOf="@id/btn_register_Register"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register_Register"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_config_main"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_register_swtichToLogIn"
+        app:layout_constraintTop_toBottomOf="@id/btn_register_Register_passwordHideShow"
+        app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
-        android:id="@+id/tv_login_register"
+        android:id="@+id/tv_register_swtichToLogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You haven't account? Just register!"
-        android:textColor="#0000CC"
-        android:textSize="13sp"
-        android:textStyle="bold"
+        android:clickable="true"
+        android:text="You have already account? Click me"
+        android:textColor="@color/white"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_login_login"
-        app:layout_constraintVertical_bias="0.495" />
-
+        app:layout_constraintTop_toBottomOf="@id/btn_register_Register"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

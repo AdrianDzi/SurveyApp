@@ -4,41 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#48C497"
+    android:background="@drawable/background_color_app"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnSwitchToSurveys"
+
+    <TextView
+        android:id="@+id/tv_loggedSuccesfullText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_config_main"
-        android:text="@string/btnShowSurveys"
-        app:layout_constraintBottom_toTopOf="@+id/btnSwitchToAddSurveys"
+        android:text="You are logged as:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_user_id"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnSwitchToAddSurveys"
+    <TextView
+        android:id="@+id/tv_user_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="144dp"
-        android:background="@drawable/btn_config_main"
-        android:text="@string/btnAddSurveys"
-        app:layout_constraintBottom_toTopOf="@+id/btnSwitchToLogIn"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnSwitchToLogIn"
+        app:layout_constraintTop_toBottomOf="@+id/tv_loggedSuccesfullText"
+        app:layout_constraintBottom_toTopOf="@id/tv_email_id"
+        tools:text="123456789"/>
+    <TextView
+        android:id="@+id/tv_email_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
-        android:background="@drawable/btn_config_main"
-        android:text="@string/btnLogIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_id"
+        app:layout_constraintBottom_toTopOf="@id/btn_user_logOut"
+        tools:text="abc@mail.com"/>
+    <Button
+        android:id="@+id/btn_user_logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        android:background="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tv_email_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
