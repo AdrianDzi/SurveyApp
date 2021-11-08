@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SurveyApp">
         <activity
+            android:name=".LoggedAsAnonymous"
+            android:exported="false" />
+        <activity
             android:name=".loggedInScreen"
             android:exported="false" />
         <activity

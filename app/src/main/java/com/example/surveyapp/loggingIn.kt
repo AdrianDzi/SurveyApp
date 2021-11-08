@@ -92,6 +92,11 @@ class loggingIn : AppCompatActivity() {
             }
         }
 
+        val tv_goToMainScreen = findViewById<TextView>(R.id.tv_login_backToMainScreen)
+        tv_goToMainScreen.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
+        }
+
 
     }
 }

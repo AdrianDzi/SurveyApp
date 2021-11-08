@@ -79,9 +79,21 @@
         android:text="You have already account? Click me"
         android:textColor="@color/white"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_register_backToMainScreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_register_Register"/>
+    <TextView
+        android:id="@+id/tv_register_backToMainScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to main screen"
+        android:layout_marginBottom="100dp"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@id/tv_register_swtichToLogIn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

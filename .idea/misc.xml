@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/drawable/btn_styling_main.xml" value="0.21979166666666666" />
         <entry key="app/src/main/res/drawable/ic_baseline_build_24.xml" value="0.36770833333333336" />
         <entry key="app/src/main/res/layout/activity_adding_surveys.xml" value="0.20364583333333333" />
+        <entry key="app/src/main/res/layout/activity_logged_as_anonymus.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/layout/activity_logged_in_screen.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_logging_in.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />

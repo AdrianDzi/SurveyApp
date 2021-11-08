@@ -88,8 +88,12 @@ class Register : AppCompatActivity() {
         val tv_switchToLogIn = findViewById<TextView>(R.id.tv_register_swtichToLogIn)
         tv_switchToLogIn.setOnClickListener {
             onBackPressed()
-//            val intent = Intent(this, loggingIn::class.java)
-//            startActivity(intent)
         }
+
+        val tv_goToMainScreen = findViewById<TextView>(R.id.tv_register_backToMainScreen)
+        tv_goToMainScreen.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
+        }
+
     }
 }
